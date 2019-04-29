@@ -1,7 +1,10 @@
 import { Survey } from './survey';
 
 export const SURVEYS: Survey[] = [
-  { id: 11, name: 'Survey 1', priority: 2, surveyDate: new Date(), platform: 'HMS Argyle', location: 'NBCD Location 3', description: 'Survey description text' },
-  { id: 12, name: 'Survey 2', priority: 4, surveyDate: new Date(), platform: 'HMS Monmouth', location: 'NBCD Location 4', description: 'Another survey description text' },
-  { id: 12, name: 'Survey 2', priority: 4, surveyDate: new Date(), platform: 'HMS Iron Duke', location: 'NBCD Location 1', description: 'More survey description text' }
-];
+  { id: 11, name: 'Survey 12', priority: 2, surveyType: 'Constructive', surveyDate: new Date(2019, 2, 2, 9, 32), platform: 'HMS Argyle', location: 'NBCD Location 3', compartment: 'Junior Rates Heads', description: 'Survey description text' },
+  { id: 12, name: 'Survey 24', priority: 4, surveyType: 'Mechanical', surveyDate: new Date(2019, 4, 15, 14, 52), platform: 'HMS Monmouth', location: 'NBCD Location 4', compartment: 'Senior Rates Heads', description: 'Another survey description text but this time with lots and lots of text to test the formatting output when viewed in a card on a list style screen.  This is a big text description that goes on and on and on - just for testing purposes.  Rinse and repeat.  Another survey description text but this time with lots and lots of text to test the formatting output when viewed in a card on a list style screen.  This is a big text description that goes on and on and on - just for testing purposes' },
+  { id: 15, name: 'Survey 27', priority: 4, surveyType: 'Constructive', surveyDate: new Date(2018, 12, 12, 10, 1), platform: 'HMS Iron Duke', location: 'NBCD Location 1', compartment: 'Galley', description: 'More survey description text' },
+  { id: 15, name: 'Survey 28', priority: 4, surveyType: 'Constructive', surveyDate: new Date(2018, 12, 12, 10, 37), platform: 'HMS Iron Duke', location: 'NBCD Location 5', compartment: 'Machinery Space', description: 'Machinery space survey - noisy and dirty' },
+  { id: 15, name: 'Survey 29', priority: 4, surveyType: 'Constructive', surveyDate: new Date(2018, 12, 12, 10, 59), platform: 'HMS Iron Duke', location: 'NBCD Location 6', compartment: 'Senior rates quarters', description: 'Senior rates living quarters - part survey' },
+  { id: 15, name: 'Survey 30', priority: 4, surveyType: 'Constructive', surveyDate: new Date(2018, 12, 12, 11, 16), platform: 'HMS Iron Duke', location: 'NBCD Location 7', compartment: 'Captains quarters', description: 'Minimal survey performed' },]
+;

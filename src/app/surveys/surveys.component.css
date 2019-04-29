@@ -1,5 +1,5 @@
 /* SurveysComponent's private CSS styles */
-.selected {
+/* .selected {
     background-color: #CFD8DC !important;
     color: white;
   }
@@ -45,4 +45,24 @@
     height: 1.8em;
     margin-right: .8em;
     border-radius: 4px 0 0 4px;
+  } */
+
+  .survey-card {
+    max-width: 92%;
+    margin-bottom: 12px;
+    
+  }
+  
+  .survey-card-content {
+    box-sizing: border-box;
+    /* background-color: aqua; */
+    overflow: hidden;
+    height: 18px;
+    
+  }
+
+  .survey-header-image {
+    /* background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg'); */
+    background-image: url('../../assets/one-48x48.jpg');
+    background-size: cover;
   }
