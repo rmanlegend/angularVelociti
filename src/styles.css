@@ -24,5 +24,40 @@ h1 {
   */
 
   @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
 html, body { height: 100%; background-color: #0c499c; color: white}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.babcock-radio-button {
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 40%;
+  color: white;
+  }
+
+.babcock-button {
+    padding-left: 5%;
+    color: grey;
+    }
+
+.babcock-select {
+      padding-left: 5%;
+      width: 40%;
+      padding-right: 5%;
+      color: grey;
+      background-color: white
+      }
+
+.babcock-text-description {
+      padding-left: 5%;
+      padding-right: 5%;
+      width: 90%;
+      color: black;
+      background-color: white;
+      }
+
+      .babcock-survey-header {
+        text-align: center;
+        color: gray;
+        }      
+            

@@ -22,14 +22,19 @@
   </li>
 </ul>
  
-<div *ngIf="selectedSurvey">
+<div *ngIf="selectedSurvey" class="babcock-survey-header">
  
-  <h2>{{selectedSurvey.name | uppercase}} Details</h2>
-  <div><span>id: </span>{{selectedSurvey.id}}</div>
+  <h2> {{selectedSurvey.name | uppercase}} Details</h2>
+  <!-- <div><span>id: </span>{{selectedSurvey.id}}</div> -->
   <div>
-    <label>name:
+<!--     <label>name:
       <input [(ngModel)]="selectedSurvey.name" placeholder="name"/>
-    </label>
+    </label> -->
+    <dynamic-form [fields]="regConfig" (submit)="submit($event)">
+    </dynamic-form>
+<!--       <div class="margin-top">
+        {{ form?.value | json }}
+      </div> -->
   </div>
  
 </div>
