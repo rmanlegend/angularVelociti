@@ -1,25 +1,20 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { Survey } from '../survey';
-import { SURVEYS } from '../mock-surveys';
-import { FieldConfig } from '../field.interface';
+import { DynamicFormComponent } from '../dynamic-form/dynamic-form.component';
+import { SURVEYS } from 'src/app/mock-surveys';
+import { Survey } from 'src/app/survey';
+import { FieldConfig } from 'src/app/field.interface';
 import { Validators } from '@angular/forms';
-import { DynamicFormComponent } from '../components/dynamic-form/dynamic-form.component';
 
 @Component({
-  selector: 'app-surveys',
-  templateUrl: './surveys.component.html',
-  styleUrls: ['./surveys.component.css']
+  selector: 'app-survey-form',
+  templateUrl: './survey-form.component.html',
+  styleUrls: ['./survey-form.component.css']
 })
-export class SurveysComponent implements OnInit {
-  @ViewChild(DynamicFormComponent) form: DynamicFormComponent;
-  
-/*   id: number;
-  priority: number;
-  surveyDate: Date;
-  name: string; */
 
-  surveys = SURVEYS;
-  selectedSurvey: Survey;
+export class SurveyFormComponent implements OnInit {
+  @ViewChild(DynamicFormComponent) form: DynamicFormComponent;
+
+ 
   regConfig: FieldConfig[] = [
     {
       type: "select",
@@ -56,11 +51,6 @@ export class SurveysComponent implements OnInit {
       name: "description",
       validations: [
         {
-          name: "required",
-          validator: Validators.required,
-          message: "Description required"
-        },
-        {
           name: "pattern",
           validator: Validators.pattern("^[a-zA-Z]+$"),
           message: "Accept only text"
@@ -75,21 +65,18 @@ export class SurveysComponent implements OnInit {
       value: "Port"
     },
     {
-      type: "button",
+      type: "buttoncommit",
       label: "Save"
     },
     {
-      type: "button",
+      type: "buttonreturn",
       label: "Close"
+
     }
   ];
   constructor() { }
 
   ngOnInit() {
-  }
-
-  onSelect(survey: Survey): void {
-    this.selectedSurvey = survey;
   }
 
 }

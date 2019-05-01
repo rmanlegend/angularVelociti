@@ -4,13 +4,13 @@ import { FieldConfig } from "../../field.interface";
 @Component({
 selector: "app-button",
 template: `
-<div class="babcock-button" [formGroup]="group">
+<div class="dynamic-field babcock-button" [formGroup]="group">
 <button type="submit" mat-raised-button color="primary">{{field.label}}</button>
 </div>
 `,
 styles: []
 })
-export class ButtonComponent implements OnInit {
+export class ButtonCommitComponent implements OnInit {
 field: FieldConfig;
 group: FormGroup;
 constructor() {}

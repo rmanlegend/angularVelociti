@@ -16,7 +16,7 @@
 
   .survey-header-image {
     /* background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg'); */
-    background-image: url('../../assets/one-48x48.jpg');
+    background-image: url('../../../assets/one-48x48.jpg');
     background-size: cover;
   }
  

@@ -5,7 +5,8 @@ import {
   import { FormGroup } from "@angular/forms";
   import { FieldConfig } from "../../field.interface";
   import { InputComponent } from "../input/input.component";
-  import { ButtonComponent } from "../button/button.component";
+  import { ButtonCommitComponent } from "../button-commit/button-commit.component";
+  import { ButtonReturnComponent } from "../button-return/button-return.component";
   import { SelectComponent } from "../select/select.component";
   import { DateComponent } from "../date/date.component";
   import { RadiobuttonComponent } from "../radiobutton/radiobutton.component";
@@ -13,7 +14,8 @@ import {
 
   const componentMapper = {
     input: InputComponent,
-    button: ButtonComponent,
+    buttoncommit: ButtonCommitComponent,
+    buttonreturn: ButtonReturnComponent,
     select: SelectComponent,
     date: DateComponent,
     radiobutton: RadiobuttonComponent,
